@@ -1,0 +1,12 @@
+package com.learn.graphql.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.learn.graphql.service.UserService;
+
+@RestController
+public class OrderController {
+
+	
+	private UserService service
+}

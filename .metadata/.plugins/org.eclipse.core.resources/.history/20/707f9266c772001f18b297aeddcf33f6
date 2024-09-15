@@ -1,0 +1,19 @@
+package com.learn.graphql.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.learn.graphql.entity.User;
+import com.learn.graphql.service.UserService;
+
+@RestController
+public class OrderController {
+
+	@Autowired
+	private UserService userService;
+	
+	
+	public User createUser(User user) {
+		return userService.createUser(user);
+	}
+}

@@ -1,0 +1,18 @@
+# User type
+type User {
+    userId: Int!
+    userName: String!
+    userEmail: String!
+    userPassword: String!
+    userPhone: String!
+    orders: [Order]
+}
+
+# Order type
+type Order {
+    orderId: Int!
+    orderDetails: String!
+    orderAddress: String!
+    orderAmount: Long!
+    user: User
+}

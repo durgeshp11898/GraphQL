@@ -1,0 +1,9 @@
+package com.learn.graphql.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.learn.graphql.entity.User;
+
+public interface UserRepository extends JpaRepository<User, Integer>{
+
+}

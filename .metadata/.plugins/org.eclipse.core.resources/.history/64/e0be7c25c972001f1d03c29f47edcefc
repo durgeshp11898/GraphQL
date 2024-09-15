@@ -1,0 +1,39 @@
+# schema.graphqls
+
+# Query type to fetch data
+type Query {
+    getAllUsers: [User]
+    getUserById(userId: Int!): User
+    getAllOrders: [Order]
+    getOrderById(orderId: Int!): Order
+}
+
+# Mutation type to modify data
+type Mutation {
+    createUser(userName: String!, userEmail: String!, userPassword: String!, userPhone: String!): User
+    updateUser(userId: Int!, userName: String, userEmail: String, userPassword: String, userPhone: String): User
+    deleteUser(userId: Int!): Boolean
+
+    createOrder(orderDetails: String!, orderAddress: String!, orderAmount: Long!, userId: Int!): Order
+    updateOrder(orderId: Int!, orderDetails: String, orderAddress: String, orderAmount: Int): Order
+    deleteOrder(orderId: Int!): Boolean
+}
+
+# User type
+type User {
+    userId: Int!
+    userName: String!
+    userEmail: String!
+    userPassword: String!
+    userPhone: String!
+    orders: [Order]
+}
+
+# Order type
+type Order {
+    orderId: Int!
+    orderDetails: String!
+    orderAddress: String!
+    orderAmount: Int!
+    user: User
+}

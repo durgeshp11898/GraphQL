@@ -1,0 +1,47 @@
+
+mutation {
+  createUser(
+    userName: "John Doe",
+    userEmail: "john.doe@example.com",
+    userPassword: "password123",
+    userPhone: "1234567890"
+  ) {
+    userId
+    userName
+  }
+}
+
+
+query{
+  getAllUsers{
+    userName,
+    orders{
+      orderId,
+      orderAmount,
+      orderDetails,
+      orderDetails
+    }
+  }
+}
+
+
+query{
+  getAllOrders{
+    orderId,
+    orderDetails,
+    orderAddress,
+    orderAmount
+  }
+}
+
+mutation {
+  createOrder(
+     orderDetails: "Java Book",
+    orderAddress: "Nashk",
+    orderAmount: 500,
+    userId: 1
+  ) {
+    orderId
+    orderDetails
+  }
+}
