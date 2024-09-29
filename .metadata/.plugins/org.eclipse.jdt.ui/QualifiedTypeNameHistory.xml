@@ -22,12 +22,15 @@
     <fullyQualifiedTypeName name="com.learn.graphql.helper.ExceptionHelper"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.learn.graphql.repository.OrderRepository"/>
-    <fullyQualifiedTypeName name="com.learn.graphql.entity.Order"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.graphql.data.method.annotation.MutationMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.graphql.data.method.annotation.Argument"/>
+    <fullyQualifiedTypeName name="org.springframework.graphql.data.method.annotation.QueryMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="com.learn.graphql.service.OrderService"/>
+    <fullyQualifiedTypeName name="com.learn.graphql.entity.Order"/>
+    <fullyQualifiedTypeName name="com.learn.graphql.entity.User"/>
     <fullyQualifiedTypeName name="com.learn.graphql.service.UserService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="com.learn.graphql.entity.User"/>
-    <fullyQualifiedTypeName name="org.springframework.graphql.data.method.annotation.MutationMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.graphql.data.method.annotation.Argument"/>
 </qualifiedTypeNameHistroy>
